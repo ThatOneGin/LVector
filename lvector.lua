@@ -2,9 +2,8 @@
 ---@class VectorLib
 local meta_vector = {
   Lib_version = "0.0.1",
-  Lib_desc    = "Simple vector library made for lua in lua.",
   Lua_version = _VERSION or "Lua 5.4",
-  github_link = "https://github.com/ThatOneGin/LVector",
+  github_link = "https://github.com/ThatOneGin/null-l",
 }
 ---@class Vector
 local vector = {}

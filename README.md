@@ -1,18 +1,22 @@
-# LVector
+# Null
 
-Simple 2D vector library for lua made in lua.
+Null (Not Useful Lua Libraries)
 
 **If any bugs were found, open an issue or pull request here.**
 
-## Installation
+# Installation
 
-Copy ```lvector.lua``` into your project and import it.
+Just copy whatever file you want in your project and import it like this:
 
 ```lua
+local shapes = require("shapes")
 local lvector = require("lvector")
+local string_view = require("string_view")
 ```
 
-## Functions
+# Functions
+
+## LVector Functions
 
 ### Library functions
 
@@ -29,8 +33,8 @@ local function random()
 function vector:clone()
 ---Clone a vector and returns it.
 
----Unpack the vector in x, y.
 function vector:unpack()
+---Unpack the vector in x, y.
 
 function vector.pack(v)
 ---Pack the vector and returning it as a new vector.
@@ -52,4 +56,36 @@ function vector:rotate(angle)
 
 function vector:normalize()
 ---Normalize vector.
+```
+
+## String_view Functions
+
+```lua
+function String_view.new(str)
+
+function String_view:l_str()
+
+function String_view:len()
+
+function String_view:hasSuffix(suffix)
+
+function String_view:hasPrefix(prefix)
+
+function String_view.split(str, delm)
+
+function String_view:putch(char, idx)
+
+function String_view:delch(idx)
+```
+
+## Shapes Functions
+
+```lua
+function shapes:shape(name, shape, ...)
+
+function shapes:reshape(name, new_shape)
+
+function shapes:hasField(name, field)
+
+function shapes:get_shape(name)
 ```
